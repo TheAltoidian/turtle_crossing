@@ -1,4 +1,3 @@
-import turtle
 from turtle import Turtle
 FONT = ("Courier", 24, "normal")
 
@@ -17,3 +16,7 @@ class Scoreboard(Turtle):
         self.clear()
         (self.write(f"Level {self.level}", font=FONT))
 
+    def game_over(self):
+        end_text = Turtle()
+        end_text.up()
+        end_text.write("GAME OVER", font=FONT)
